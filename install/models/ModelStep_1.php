@@ -1,7 +1,7 @@
 <?php
 class ModelStep_1 extends Model {
     
-    private $min_php_version = '7.0';
+    private $min_php_version = '7.4';
     private $required_extensions = array(
                                     "MySQLi"=> array(),
                                     "ZLIB"=> array(),

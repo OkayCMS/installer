@@ -28,6 +28,7 @@ class ModelStep_3 extends Model {
         mysqli_query($this->dbc, "UPDATE ok_settings SET value='{$_POST['notify_email']}' WHERE param='order_email' OR param='comment_email' OR param='notify_from_email';");
         mysqli_query($this->dbc, "UPDATE ok_settings SET value='{$_POST['email_for_site']}' WHERE param='site_email';");
         mysqli_query($this->dbc, "UPDATE ok_settings SET value='{$_POST['phone_default_region']}' WHERE param='phone_default_region';");
+        mysqli_query($this->dbc, "UPDATE ok_settings SET value='{$_POST['email_for_module']}' WHERE param='email_for_module';");
 
         $phones = [];
         foreach (explode(',', $_POST['phones']) as $k=>$phone) {
